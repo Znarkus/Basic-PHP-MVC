@@ -6,7 +6,7 @@ class Hello_World_Controller
 	{
 		// Do things
 		// Use models to do all the heavy lifting
-		// Return the results for the view to present
+		// Return the results to the view for presentation
 		
 		return 'Hello World';
 	}
