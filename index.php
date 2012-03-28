@@ -1,8 +1,13 @@
 <?php
 
-include 'controllers/hello_world.php';
+// Every URL will be routed here.
+// We should run different controller/actions depending on the URL
+// But this example will always load the "products" controller and 
+// run the "all" action.
 
-$controller = new Hello_World_Controller();
-$result = $controller->some_action();
+require 'controllers/products.php';
 
-include 'views/hello_world.php';
+$controller = new Products_Controller();
+$result = $controller->all();
+
+require 'views/products_all.php';
